@@ -22,59 +22,61 @@
 </head>
 <body>
 
-    <div class=" min-h-screen text-dark">
+    <div class="md:px-24 px-8  min-h-screen text-dark">
 
-        <!-- Navbar  -->
-        <nav class="flex justify-between md:px-24 px-8">
-            <div class="py-4 flex w-full items-center">
-                <a class="text-2xl font-bold" href="/">
-                    QR
-                </a>
-                <!-- Nav Links -->
-                <ul class="hidden md:flex px-4 mx-auto font-normal space-x-12">
-                    <li><a class="" href="#">Home</a></li>
-                    <li><a class="" href="#">About Us</a></li>
-                    <li><a class="" href="#">Service</a></li>
-                    <li><a class="" href="#">Resources</a></li>
-                    <li><a class="" href="#">Blog</a></li>
-                </ul>
-
-                <div class="hidden xl:flex items-center">
-                    <!-- Sign In / Register      -->
-                    <button class="w-24 px-4 py-2 bg-dark text-white font-normal rounded ">Sign In</button>
-                </div>
-            </div>
-            <!-- Responsive navbar -->
-            <a class="self-center xl:hidden" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </a>
-        </nav>
+        <div class="min-h-screen ">
+            <!-- Navbar  -->
+            <nav class="flex justify-between ">
+                <div class="py-4 flex w-full items-center">
+                    <a class="text-2xl font-bold" href="/">
+                        QR
+                    </a>
+                    <!-- Nav Links -->
+                    <ul class="hidden md:flex px-4 mx-auto font-normal space-x-12">
+                        <li><a class="" href="#">Home</a></li>
+                        <li><a class="" href="#">About Us</a></li>
+                        <li><a class="" href="#">Service</a></li>
+                        <li><a class="" href="#">Resources</a></li>
+                        <li><a class="" href="#">Blog</a></li>
+                    </ul>
     
-        <!-- Hero -->
-        <section class="bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply" style="background-image: url('./assets/heroBackground.jpg');">>
-            <div class="px-4 mx-auto max-w-screen-xl text-center py-18 lg:py-56">
-                <h1 class="mb-4 text-3xl font-extrabold tracking-tight leading-none capitalize text-white mx-auto md:text-5xl lg:text-5xl max-w-3xl">Great Marketing makes the <span class="text-heroGreen">Customer</span> Feel Smart </h1>
-                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed distinctio voluptate, veritatis perspiciatis laborum adipisci maxime maiores? Numquam temporibus provident ut voluptas perferendis facilis nostrum corrupti similique accusamus illo?
-                </p>
-                <div class="flex flex-col py-3 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                    <button class="inline-flex justify-center items-center py-3 px-5 text-base font-normal text-center text-dark rounded bg-gray-50 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200">
-                        Let's Get started
-                    </button>
-                    <button class="inline-flex justify-center items-center py-3 px-5 text-base font-normal text-center text-white hover:text-dark rounded bg-transparent hover:bg-white group">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-4 group-hover:animate-spin">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-                        </svg>                          
-                        Watch Video
-                    </button>
+                    <div class="hidden xl:flex items-center">
+                        <!-- Sign In / Register      -->
+                        <button class="w-24 px-4 py-2 bg-dark text-white font-normal rounded ">Sign In</button>
+                    </div>
                 </div>
-            </div>
-        </section>
+                <!-- Responsive navbar -->
+                <a class="self-center xl:hidden" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </a>
+            </nav>
+        
+            <!-- Hero -->
+            <section class=" bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply rounded-md max-h-screen" style="background-image: url('./assets/heroBackground.jpg');">>
+                <div class="px-4 mx-auto max-w-screen-xl text-center py-18 lg:py-56">
+                    <h1 class="mb-4 text-3xl font-extrabold tracking-tight leading-none capitalize text-white mx-auto md:text-5xl lg:text-5xl max-w-3xl">Great Marketing makes the <span class="text-heroGreen">Customer</span> Feel Smart </h1>
+                    <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed distinctio voluptate, veritatis perspiciatis laborum adipisci maxime maiores? Numquam temporibus provident ut voluptas perferendis facilis nostrum corrupti similique accusamus illo?
+                    </p>
+                    <div class="flex flex-col py-3 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                        <button class="inline-flex justify-center items-center py-3 px-5 text-base font-normal text-center text-dark rounded bg-gray-50 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200">
+                            Let's Get started
+                        </button>
+                        <button class="inline-flex justify-center items-center py-3 px-5 text-base font-normal text-center text-white hover:text-dark rounded bg-transparent hover:bg-white group">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-4 group-hover:animate-spin">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                            </svg>                          
+                            Watch Video
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
     
         <!-- Trusted by  -->
-        <div class="md:px-24 px-8 py-8">
+        <div class=" py-16">
             <h1 class="text-center text-bold text-2xl tracking-wide">Trusted By Over 500+ Happy Customer</h1>
 
             <div class="grid md:grid-cols-4 grid-cols-2 items-center md:justify-between gap-4 mt-6">
@@ -86,7 +88,7 @@
         </div>
     
         <!-- Case studies -->
-        <div class="md:flex justify-between items-center min-h-full md:px-24 px-8 py-4 md:mt-12">
+        <div class="md:flex justify-between items-center min-h-full  py-16 md:mt-12">
             <div class="rounded-md md:block hidden">
                 <img src="./assets/featured.jpg" alt="Case" class="bg-cover h-72">
             </div>
@@ -101,14 +103,14 @@
         </div>
     
         <!-- offer  -->
-        <div class="md:px-24 px-8 py-4 md:mt-12">
+        <div class=" py-4 md:mt-12">
             <div class="mx-auto">
                 <h1 class="font-bold text-3xl text-center tracking-wide capitalize">What we offer</h1>
                 <p class="text-center my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet ipsum quibusdam dolores eveniet </p>
             </div>
             <!--Offer Cards -->
-            <div class="md:flex justify-between mt-12 md:mx-12">
-                <div class="md:w-96 md:h-full bg-white rounded-md border shadow-lg md:mt-0 mt-6">
+            <div class="md:flex justify-between mt-12 gap-6">
+                <div class="md:w-96 md:h-full bg-white rounded-md border shadow-lg md:mt-0 mt-6 flex-1">
                     <img src="./assets/design.jpg" alt="design" class="rounded-t-md bg-center bg-cover">
 
                     <div class="p-5">
@@ -119,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-96 md:h-full bg-white rounded-md border shadow-lg md:mt-0 mt-6">
+                <div class="md:w-96 md:h-full bg-white rounded-md border shadow-lg md:mt-0 mt-6 flex-1">
                     <img src="./assets/design.jpg" alt="design" class="rounded-t-md bg-center bg-cover">
 
                     <div class="p-5">
@@ -130,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-96 md:h-full bg-white rounded-md border shadow-lg md:mt-0 mt-6">
+                <div class="md:w-96 md:h-full bg-white rounded-md border shadow-lg md:mt-0 mt-6 flex-1">
                     <img src="./assets/design.jpg" alt="design" class="rounded-t-md bg-center bg-cover">
 
                     <div class="p-5">
@@ -146,8 +148,8 @@
         </div>
     
         <!-- agency  -->
-        <div class="md:px-24 px-8 py-4 md:mt-12">
-            <div class="grid md:grid-cols-5 grid-col-2 place-items-center gap-6">
+        <div class=" py-4 md:mt-12">
+            <div class="grid md:grid-cols-5 grid-col-2 gap-6">
                 <h2 class="font-normal text-2xl">Leading No. 1 <span class="font-bold text-lg">Agency</span></h2>
                 <div class="flex-col text-center">
                     <h1 class="font-bold tracking-wide">5 Years+</h1>
@@ -169,7 +171,7 @@
         </div>
     
         <!-- testimonial  -->
-        <div class="md:px-24 px-8 py-4 md:mt-12">
+        <div class=" py-4 md:mt-12">
             <div class="mx-auto">
                 <h1 class="font-bold text-3xl text-center tracking-wide capitalize">Testimonials</h1>
                 <p class="text-center my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet ipsum quibusdam dolores eveniet </p>
@@ -256,15 +258,15 @@
         </div>
     
         <!-- contact  -->
-        <div class="md:px-24 px-8 py-4 md:mt-12">
-            <div class="mx-auto">
-                <h1 class="font-bold text-3xl text-center tracking-wide capitalize">Contact US</h1>
+        <div class=" py-16 md:mt-12">
+            <div class="">
+                <h1 class="font-bold text-3xl text-center tracking-wide capitalize">Contact Us</h1>
                 <p class="text-center my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet ipsum quibusdam dolores eveniet </p>
             </div>
 
-            <div class="md:flex justify-around items-center min-h-full mt-8">
+            <div class="md:flex justify-between items-center min-h-full mt-8">
                 <div class="rounded-md md:block hidden">
-                    <img src="./assets/contact.jpg" alt="Case" class="bg-cover h-72">
+                    <img src="./assets/contact.jpg" alt="Case" class="bg-cover w-full h-72">
                 </div>
     
                 <div class="md:max-w-3xl">
@@ -283,7 +285,7 @@
                             </div>
                         </div>
                         <!-- Last name  -->
-                        <div class="w-full px-3 sm:w-1/2">
+                        <div class="w-full  sm:w-1/2">
                             <div class="mb-5">
                                 <input
                                     type="text"
@@ -305,7 +307,7 @@
                             </div>
                         </div>
                         <!-- Phone number  -->
-                        <div class="w-full px-3 sm:w-1/2">
+                        <div class="w-full sm:w-1/2">
                             <div class="mb-5">
                                 <input
                                     type="text"
@@ -336,7 +338,7 @@
         </div>
     
         <!-- subscribe  -->
-        <div class="md:px-24 px-8 py-4 md:mt-12">
+        <div class=" py-4 md:mt-12">
             <div class="mx-auto">
                 <h1 class="font-bold text-3xl text-center tracking-wide uppercase">Subscribe</h1>
                 <p class="text-center my-2">Subscribe to the newsletter to be among the first receiver of information</p>
