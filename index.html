@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                dark: '#111111',
+                heroGreen: '#4FE9A4',
+                subscribe: '#F8F8F8',
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+
+    <div class=" min-h-screen text-dark">
+
+        <!-- Navbar  -->
+        <nav class="flex justify-between md:px-24 px-8">
+            <div class="py-4 flex w-full items-center">
+                <a class="text-2xl font-bold" href="/">
+                    QR
+                </a>
+                <!-- Nav Links -->
+                <ul class="hidden md:flex px-4 mx-auto font-normal space-x-12">
+                    <li><a class="" href="#">Home</a></li>
+                    <li><a class="" href="#">About Us</a></li>
+                    <li><a class="" href="#">Service</a></li>
+                    <li><a class="" href="#">Resources</a></li>
+                    <li><a class="" href="#">Blog</a></li>
+                </ul>
+
+                <div class="hidden xl:flex items-center">
+                    <!-- Sign In / Register      -->
+                    <button class="w-24 px-4 py-2 bg-dark text-white font-normal rounded ">Sign In</button>
+                </div>
+            </div>
+            <!-- Responsive navbar -->
+            <a class="self-center xl:hidden" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </a>
+        </nav>
+    
+        <!-- Hero -->
+        <section class="bg-cover bg-no-repeat bg-gray-700 bg-blend-multiply" style="background-image: url('./assets/heroBackground.jpg');">>
+            <div class="px-4 mx-auto max-w-screen-xl text-center py-18 lg:py-56">
+                <h1 class="mb-4 text-3xl font-extrabold tracking-tight leading-none capitalize text-white mx-auto md:text-5xl lg:text-5xl max-w-3xl">Great Marketing makes the <span class="text-heroGreen">Customer</span> Feel Smart </h1>
+                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed distinctio voluptate, veritatis perspiciatis laborum adipisci maxime maiores? Numquam temporibus provident ut voluptas perferendis facilis nostrum corrupti similique accusamus illo?
+                </p>
+                <div class="flex flex-col py-3 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                    <button class="inline-flex justify-center items-center py-3 px-5 text-base font-normal text-center text-dark rounded bg-gray-50 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200">
+                        Let's Get started
+                    </button>
+                    <button class="inline-flex justify-center items-center py-3 px-5 text-base font-normal text-center text-white hover:text-dark rounded bg-transparent hover:bg-white group">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-4 group-hover:animate-spin">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                        </svg>                          
+                        Watch Video
+                    </button>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Trusted by  -->
+        <div class="md:px-24 px-8 py-8">
+            <h1 class="text-center text-bold text-2xl tracking-wide">Trusted By Over 500+ Happy Customer</h1>
+
+            <div class="grid md:grid-cols-4 grid-cols-2 items-center md:justify-between gap-4 mt-6">
+                <img src="./assets/flutterwave.svg" alt="flutterwave" class="">
+                <img src="./assets/talentQL.svg" alt="talentQL" class="">
+                <img src="./assets/thrive.svg" alt="thrive" class="">
+                <img src="./assets/fluidcoins.svg" alt="fluidcoins" class="">
+            </div>
+        </div>
+    
+        <!-- Case studies -->
+        <div class="md:flex justify-between items-center min-h-full md:px-24 px-8 py-4 md:mt-12">
+            <div class="rounded-md md:block hidden">
+                <img src="./assets/featured.jpg" alt="Case" class="bg-cover h-72">
+            </div>
+
+            <div class="md:max-w-3xl md:h-72">
+                <h1 class="font-bold tracking-wide md:text-start text-center capitalize md:text-2xl ">Take a look at the featured case studies</h1>
+                <p class="text-justify tracking-wide font-normal mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit cupiditate, facilis cum aliquam fuga eligendi a enim omnis, blanditiis amet dolor sed voluptate at aliquid hic odio laudantium deleniti! Minima?
+                Aperiam, aliquam incidunt praesentium, in ratione vel consequatur eos ipsa voluptate accusantium autem molestias recusandae nesciunt, a exercitationem nam nisi ex repellat dignissimos voluptatibus blanditiis tempora laboriosam deserunt. Nobis, officiis.</p>
+                
+                <button class="bg-dark py-2 px-6 w-18 text-white font-normal tracking-wide mt-4 rounded">Case Studies</button>
+            </div>
+        </div>
+    
+        <!-- offer  -->
+        <div class="md:px-24 px-8 py-4 md:mt-12">
+            <div class="mx-auto">
+                <h1 class="font-bold text-3xl text-center tracking-wide capitalize">What we offer</h1>
+                <p class="text-center my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet ipsum quibusdam dolores eveniet </p>
+            </div>
+            <!--Offer Cards -->
+            <div class="md:flex justify-between mt-12 md:mx-12">
+                <div class="md:w-96 md:h-full bg-white rounded-md border shadow-lg md:mt-0 mt-6">
+                    <img src="./assets/design.jpg" alt="design" class="rounded-t-md bg-center bg-cover">
+
+                    <div class="p-5">
+                        <h5 class="text-2xl text-dark font-bold tracking-normal mb-2 text-center">Graphic Design</h5>
+                        <p class="font-normal text-dark mb-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore delectus ratione velit earum adipisci deserunt. Provident, earum consequatur qui molestiae laborum fuga atque est nesciunt perferendis accusamus quidem, quos laudantium.</p>
+                        <div class="flex justify-center">
+                            <button class=" py-2 px-4 w-18 bg-dark text-white tracking-normal font-normal text-md text-center items-center rounded-md">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-96 md:h-full bg-white rounded-md border shadow-lg md:mt-0 mt-6">
+                    <img src="./assets/design.jpg" alt="design" class="rounded-t-md bg-center bg-cover">
+
+                    <div class="p-5">
+                        <h5 class="text-2xl text-dark font-bold tracking-normal mb-2 text-center">Digital Marketing</h5>
+                        <p class="font-normal text-dark mb-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore delectus ratione velit earum adipisci deserunt. Provident, earum consequatur qui molestiae laborum fuga atque est nesciunt perferendis accusamus quidem, quos laudantium.</p>
+                        <div class="flex justify-center">
+                            <button class=" py-2 px-4 w-18 bg-dark text-white tracking-normal font-normal text-md text-center items-center rounded-md">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-96 md:h-full bg-white rounded-md border shadow-lg md:mt-0 mt-6">
+                    <img src="./assets/design.jpg" alt="design" class="rounded-t-md bg-center bg-cover">
+
+                    <div class="p-5">
+                        <h5 class="text-2xl text-dark font-bold tracking-normal mb-2 text-center">Customer Care</h5>
+                        <p class="font-normal text-dark mb-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore delectus ratione velit earum adipisci deserunt. Provident, earum consequatur qui molestiae laborum fuga atque est nesciunt perferendis accusamus quidem, quos laudantium.</p>
+                        <div class="flex justify-center">
+                            <button class=" py-2 px-4 w-18 bg-dark text-white tracking-normal font-normal text-md text-center items-center rounded-md">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    
+        <!-- agency  -->
+        <div class="md:px-24 px-8 py-4 md:mt-12">
+            <div class="grid md:grid-cols-5 grid-col-2 place-items-center gap-6">
+                <h2 class="font-normal text-2xl">Leading No. 1 <span class="font-bold text-lg">Agency</span></h2>
+                <div class="flex-col text-center">
+                    <h1 class="font-bold tracking-wide">5 Years+</h1>
+                    <h3 class="font-normal tracking-wide">of successful journey of agency</h3>
+                </div>
+                <div class="flex-col text-center">
+                    <h1 class="font-bold tracking-wide">3000+</h1>
+                    <h3 class="font-normal tracking-wide">successful individual clients</h3>
+                </div>
+                <div class="flex-col text-center">
+                    <h1 class="font-bold tracking-wide">2500+</h1>
+                    <h3 class="font-normal tracking-wide">brands who have worked with us</h3>
+                </div>
+                <div class="flex-col text-center">
+                    <h1 class="font-bold tracking-wide">5000+</h1>
+                    <h3 class="font-normal tracking-wide">successful project</h3>
+                </div>
+            </div>
+        </div>
+    
+        <!-- testimonial  -->
+        <div class="md:px-24 px-8 py-4 md:mt-12">
+            <div class="mx-auto">
+                <h1 class="font-bold text-3xl text-center tracking-wide capitalize">Testimonials</h1>
+                <p class="text-center my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet ipsum quibusdam dolores eveniet </p>
+            </div>
+
+            <div class="flex justify-between items-center mt-8">
+                <!-- Previous  -->
+                <button 
+                    class=" w-8 h-8 md:flex items-center justify-center hidden rounded-full border-2 border-dark"
+                    id="prev"
+                    onclick="previousReview()"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>                                          
+                </button>
+                <!-- Content  -->
+                <div class="">
+                    <div class="md:w-[650px] h-80 bg-subscribe drop-shadow-lg">
+
+                        <div class="flex justify-around items-center h-full px-12">
+                            <div class="md:flex hidden">
+                                <div class=" w-36 h-36 rounded-full bg-heroGreen relative">
+                                    <div class="absolute -left-4 -top-3 w-16 h-16 rounded-full bg-heroGreen"></div>
+                                    <img src="./assets/avatar1.jpg" alt="avatar" class="object-cover w-32 h-32 rounded-full absolute top-0 left-0 right-0 bottom-0 m-auto">
+                                </div>                            
+                            </div>
+                            
+                            <div class="md:mx-12">
+                                <p class="relative">
+                                    <!-- Opening quote SVG -->
+                                    <svg class="absolute -top-6 -left-8 h-6 w-6 text-dark" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1 21.6498H10.2375C8.9 21.6498 7.8125 20.5623 7.8125 19.2248V15.8872C7.8125 15.3747 8.2375 14.9497 8.75 14.9497H12.1C13.4625 14.9497 14.525 16.0122 14.525 17.3747V19.2372C14.5125 20.5747 13.45 21.6498 12.1 21.6498ZM9.6875 16.8122V19.2122C9.6875 19.5122 9.9375 19.7623 10.2375 19.7623H12.1C12.5 19.7623 12.65 19.4622 12.65 19.2122V17.3498C12.65 17.0998 12.5125 16.7998 12.1 16.7998H9.6875V16.8122Z" fill="#292D32" fill-opacity="0.5"/>
+                                        <path d="M8.75 16.8123C8.2375 16.8123 7.8125 16.3873 7.8125 15.8748C7.8125 12.0248 8.65001 11.1624 10.8875 9.83739C11.325 9.57489 11.9125 9.72491 12.175 10.1624C12.4375 10.5999 12.2875 11.1874 11.85 11.4499C10.15 12.4624 9.6875 12.7248 9.6875 15.8748C9.6875 16.3998 9.2625 16.8123 8.75 16.8123Z" fill="#292D32" fill-opacity="0.5"/>
+                                        <path d="M19.7623 21.6498H17.8999C16.5624 21.6498 15.4749 20.5623 15.4749 19.2248V15.8872C15.4749 15.3747 15.8999 14.9497 16.4124 14.9497H19.7623C21.1248 14.9497 22.1873 16.0122 22.1873 17.3747V19.2372C22.1873 20.5747 21.1248 21.6498 19.7623 21.6498ZM17.3623 16.8122V19.2122C17.3623 19.5122 17.6123 19.7623 17.9123 19.7623H19.7749C20.1749 19.7623 20.3248 19.4622 20.3248 19.2122V17.3498C20.3248 17.0998 20.1874 16.7998 19.7749 16.7998H17.3623V16.8122Z" fill="#292D32" fill-opacity="0.5"/>
+                                        <path d="M16.4252 16.8123C15.9127 16.8123 15.4877 16.3873 15.4877 15.8748C15.4877 12.0248 16.3252 11.1624 18.5627 9.83739C19.0127 9.57489 19.5877 9.72491 19.8502 10.1624C20.1127 10.6124 19.9627 11.1874 19.5252 11.4499C17.8252 12.4624 17.3627 12.7248 17.3627 15.8748C17.3627 16.3998 16.9377 16.8123 16.4252 16.8123Z" fill="#292D32" fill-opacity="0.5"/>
+                                        <path d="M15 29.1123C7.5875 29.1123 1.5625 23.0873 1.5625 15.6748C1.5625 8.2623 7.5875 2.2373 15 2.2373C22.4125 2.2373 28.4375 8.2623 28.4375 15.6748C28.4375 23.0873 22.4125 29.1123 15 29.1123ZM15 4.1123C8.625 4.1123 3.4375 9.2998 3.4375 15.6748C3.4375 22.0498 8.625 27.2373 15 27.2373C21.375 27.2373 26.5625 22.0498 26.5625 15.6748C26.5625 9.2998 21.375 4.1123 15 4.1123Z" fill="#292D32" fill-opacity="0.5"/>
+                                    </svg>                                    
+                                    
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ducimus unde eos ut amet! Blanditiis placeat, dolor id earum laudantium explicabo neque est cumque ut nisi dolorem labore, porro recusandae.
+                        
+                                    <!-- Closing quote SVG -->
+                                    <svg class="absolute -bottom-6 -right-8 h-6 w-6 text-dark" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.2498 16.4123H17.8999C16.5374 16.4123 15.4749 15.3498 15.4749 13.9873V12.1247C15.4749 10.7622 16.5374 9.69971 17.8999 9.69971H19.7623C21.0998 9.69971 22.1873 10.7872 22.1873 12.1247V15.4623C22.1873 15.9873 21.7623 16.4123 21.2498 16.4123ZM17.8999 11.5747C17.4999 11.5747 17.3499 11.8747 17.3499 12.1247V13.9873C17.3499 14.2373 17.4874 14.5373 17.8999 14.5373H20.3123V12.1372C20.3123 11.8372 20.0623 11.5872 19.7623 11.5872H17.8999V11.5747Z" fill="#292D32" fill-opacity="0.5"/>
+                                        <path d="M18.6375 21.6499C18.3125 21.6499 17.9999 21.4873 17.8249 21.1873C17.5624 20.7373 17.7125 20.1623 18.15 19.8998C19.85 18.8873 20.3125 18.6249 20.3125 15.4749C20.3125 14.9624 20.7375 14.5374 21.25 14.5374C21.7625 14.5374 22.1875 14.9624 22.1875 15.4749C22.1875 19.3249 21.3499 20.1873 19.1124 21.5123C18.9624 21.5998 18.8 21.6499 18.6375 21.6499Z" fill="#292D32" fill-opacity="0.5"/>
+                                        <path d="M13.5753 16.4123H10.2253C8.86278 16.4123 7.80029 15.3498 7.80029 13.9873V12.1247C7.80029 10.7622 8.86278 9.69971 10.2253 9.69971H12.0878C13.4253 9.69971 14.5128 10.7872 14.5128 12.1247V15.4623C14.5128 15.9873 14.1003 16.4123 13.5753 16.4123ZM10.2378 11.5747C9.83779 11.5747 9.68779 11.8747 9.68779 12.1247V13.9873C9.68779 14.2373 9.82529 14.5373 10.2378 14.5373H12.6503V12.1372C12.6503 11.8372 12.4003 11.5872 12.1003 11.5872H10.2378V11.5747Z" fill="#292D32" fill-opacity="0.5"/>
+                                        <path d="M10.9623 21.6499C10.6373 21.6499 10.3248 21.4873 10.1498 21.1873C9.88727 20.7373 10.0373 20.1623 10.4748 19.8998C12.1748 18.8873 12.6373 18.6249 12.6373 15.4749C12.6373 14.9624 13.0623 14.5374 13.5748 14.5374C14.0873 14.5374 14.5123 14.9624 14.5123 15.4749C14.5123 19.3249 13.6748 20.1873 11.4373 21.5123C11.2873 21.5998 11.1248 21.6499 10.9623 21.6499Z" fill="#292D32" fill-opacity="0.5"/>
+                                        <path d="M15 29.1123C7.5875 29.1123 1.5625 23.0873 1.5625 15.6748C1.5625 8.2623 7.5875 2.2373 15 2.2373C22.4125 2.2373 28.4375 8.2623 28.4375 15.6748C28.4375 23.0873 22.4125 29.1123 15 29.1123ZM15 4.1123C8.625 4.1123 3.4375 9.2998 3.4375 15.6748C3.4375 22.0498 8.625 27.2373 15 27.2373C21.375 27.2373 26.5625 22.0498 26.5625 15.6748C26.5625 9.2998 21.375 4.1123 15 4.1123Z" fill="#292D32" fill-opacity="0.5"/>
+                                    </svg>                                    
+                                </p>
+
+                                <div class="flex items-center md:space-x-0 space-x-6 h-full md:mt-0 mt-8">
+
+                                    <div class="md:hidden flex">
+                                        <div class=" w-16 h-16 rounded-full bg-heroGreen relative">
+                                            <!-- <div class="absolute -left-4 -top-3 w-4 h-4 rounded-full bg-heroGreen"></div> -->
+                                            <img src="./assets/avatar1.jpg" alt="avatar" class="object-cover w-12 h-12 rounded-full absolute top-0 left-0 right-0 bottom-0 m-auto">
+                                        </div>                            
+                                    </div>
+
+                                    <div class="text-center md:mt-12">
+                                        <h1 class="font-bold tracking-wide">Gloria Mbapo</h1>
+                                        <h3 class="font-normal tracking-wider">LD, practioner</h3>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Next -->
+                <button 
+                    class="w-8 h-8 md:flex items-center justify-center hidden rounded-full border-2 border-dark"
+                    id="next"
+                    onclick="nextReview()"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>                                          
+                </button>
+
+            </div>
+        </div>
+    
+        <!-- contact  -->
+        <div class="md:px-24 px-8 py-4 md:mt-12">
+            <div class="mx-auto">
+                <h1 class="font-bold text-3xl text-center tracking-wide capitalize">Contact US</h1>
+                <p class="text-center my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet ipsum quibusdam dolores eveniet </p>
+            </div>
+
+            <div class="md:flex justify-around items-center min-h-full mt-8">
+                <div class="rounded-md md:block hidden">
+                    <img src="./assets/contact.jpg" alt="Case" class="bg-cover h-72">
+                </div>
+    
+                <div class="md:max-w-3xl">
+                    <h1 class="font-medium tracking-wide text-center capitalize md:text-md mb-8">Leave us a message</h1>
+                    
+                    <div class="flex flex-wrap">
+                        <!-- First name  -->
+                        <div class="w-full px-3 sm:w-1/2">
+                            <div class="mb-5">
+                                <input
+                                    type="text"
+                                    name="fName"
+                                    placeholder="First Name"
+                                    class="w-full rounded-md bg-subscribe py-3 px-6 text-base font-medium text-dark outline-none drop-shadow-lg focus:border-dark focus:shadow-md"
+                                />
+                            </div>
+                        </div>
+                        <!-- Last name  -->
+                        <div class="w-full px-3 sm:w-1/2">
+                            <div class="mb-5">
+                                <input
+                                    type="text"
+                                    name="lName"
+                                    placeholder="Last Name"
+                                    class="w-full rounded-md bg-subscribe py-3 px-6 text-base font-medium text-dark outline-none drop-shadow-lg focus:border-dark focus:shadow-md"
+                                />
+                            </div>
+                        </div>
+                        <!-- Email  -->
+                        <div class="w-full px-3 sm:w-1/2">
+                            <div class="mb-5">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email Address"
+                                    class="w-full rounded-md bg-subscribe py-3 px-6 text-base font-medium text-dark outline-none drop-shadow-lg focus:border-dark focus:shadow-md"
+                                />
+                            </div>
+                        </div>
+                        <!-- Phone number  -->
+                        <div class="w-full px-3 sm:w-1/2">
+                            <div class="mb-5">
+                                <input
+                                    type="text"
+                                    name="phone"
+                                    placeholder="Phone Number"
+                                    class="w-full rounded-md bg-subscribe py-3 px-6 text-base font-medium text-dark outline-none drop-shadow-lg focus:border-dark focus:shadow-md"
+                                />
+                            </div>
+                        </div>
+                        <!-- Message  -->
+                        <div class="w-full">
+                            <div class="mb-5">
+                                <textarea 
+                                    name="message" 
+                                    cols="100" 
+                                    rows="5" 
+                                    class="w-full rounded-md bg-subscribe py-3 px-6 text-base font-medium text-dark outline-none drop-shadow-lg focus:border-dark focus:shadow-md"
+                                >
+                                </textarea>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <button class="bg-dark py-2 px-6 w-18 text-white font-normal tracking-wide mt-4 rounded">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- subscribe  -->
+        <div class="md:px-24 px-8 py-4 md:mt-12">
+            <div class="mx-auto">
+                <h1 class="font-bold text-3xl text-center tracking-wide uppercase">Subscribe</h1>
+                <p class="text-center my-2">Subscribe to the newsletter to be among the first receiver of information</p>
+            </div>
+
+            <div class="flex items-center justify-center mt-4">
+                <input class="rounded-l-md p-4 mr-0 text-dark bg-subscribe drop-shadow-lg outline-none focus:border-0 focus:shadow-md w-full" placeholder="E-mail Address"/>
+                <button class="px-8 rounded-r-md bg-dark  text-white font-normal tracking-wider p-4 drop-shadow-lg focus:border-dark focus:shadow-md uppercase">Subscribe</button>
+            </div>
+        </div>
+    
+        <!-- footer -->
+        <footer class=" text-dark">
+            <div class=" px-8 py-8 mt-8 mx-auto sm:px-6 lg:px-24">
+
+                <div class="grid grid-cols-1 lg:grid-cols-3">
+
+                    <div class="">
+                        <p class="max-w-xs mt-4 text-sm text-dark font-semibold tracking-wide">
+                            Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!
+                        </p>
+                        <div class="my-2">
+                            <h2 class="font-light">Download the App</h2>
+                            <div class='flex md:gap-6 gap-4 mt-2'>
+                                <button class='flex items-center justify-center md:w-44 py-2 px-3 rounded bg-dark text-white'>
+                                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" class="text-[32px] mr-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
+                                    <span class="text-base">Google Play</span>
+                                </button>
+                                <button class='flex items-center justify-center md:w-44 py-2 px-3 rounded bg-dark text-white'>
+                                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" class="text-[32px] mr-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M255.9 120.9l9.1-15.7c5.6-9.8 18.1-13.1 27.9-7.5 9.8 5.6 13.1 18.1 7.5 27.9l-87.5 151.5h63.3c20.5 0 32 24.1 23.1 40.8H113.8c-11.3 0-20.4-9.1-20.4-20.4 0-11.3 9.1-20.4 20.4-20.4h52l66.6-115.4-20.8-36.1c-5.6-9.8-2.3-22.2 7.5-27.9 9.8-5.6 22.2-2.3 27.9 7.5l8.9 15.7zm-78.7 218l-19.6 34c-5.6 9.8-18.1 13.1-27.9 7.5-9.8-5.6-13.1-18.1-7.5-27.9l14.6-25.2c16.4-5.1 29.8-1.2 40.4 11.6zm168.9-61.7h53.1c11.3 0 20.4 9.1 20.4 20.4 0 11.3-9.1 20.4-20.4 20.4h-29.5l19.9 34.5c5.6 9.8 2.3 22.2-7.5 27.9-9.8 5.6-22.2 2.3-27.9-7.5-33.5-58.1-58.7-101.6-75.4-130.6-17.1-29.5-4.9-59.1 7.2-69.1 13.4 23 33.4 57.7 60.1 104zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216z"></path></svg>
+                                    <span class="text-base">Apple Store</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-3">
+                        <div>
+                        <p class="font-medium">
+                            Services
+                        </p>
+                        <nav class="flex flex-col mt-4 space-y-2 text-sm text-sosaFooterText">
+                            <div class="hover:opacity-75"> • Branding </div>
+                            <div class="hover:opacity-75"> • Cyber Security </div>
+                            <div class="hover:opacity-75"> • SEO Marketing </div>
+                            <div class="hover:opacity-75"> • Social Media Maarketing </div>
+                        </nav>
+                        </div>
+                        <div>
+                        <p class="font-medium">
+                            Quick Links
+                        </p>
+                        <nav class="flex flex-col mt-4 space-y-2 text-sm text-sosaFooterText">
+                            <div class="hover:opacity-75"> • Case Studies </div>
+                            <div class="hover:opacity-75"> • About Us </div>
+                            <div class="hover:opacity-75"> • Testimonials </div>
+                            <div class="hover:opacity-75"> • Blogs </div>
+                        </nav>
+                        </div>
+                        <div>
+                        <p class="font-medium">
+                            Solutions
+                        </p>
+                        <nav class="flex flex-col mt-4 space-y-2 text-sm text-sosaFooterText">
+                            <div class="hover:opacity-75"> Social Media problems </div>
+                            <div class="hover:opacity-75"> Investors issues </div>
+                            <div class="hover:opacity-75"> SEO maarketing issue </div>
+                            <div class="hover:opacity-75"> Brand Help </div>
+                        </nav>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Social  -->
+                <div class="flex justify-end mt-8 space-x-4 text-dark">
+                    <button class="flex items-center justify-center bg-gray-300 shadow-inner h-8 w-8 drop-shadow-lg">
+                        <span class="sr-only"> Twitter </span>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                        </svg>
+                    </button>
+                    <button class="flex items-center justify-center bg-gray-300 shadow-inner h-8 w-8 drop-shadow-lg">
+                        <span class="sr-only"> LinkedIn </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 512 512"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"/></svg>
+                    </button>
+                    <button class="flex items-center justify-center bg-gray-300 shadow-inner h-8 w-8 drop-shadow-lg">
+                        <span class="sr-only"> Instagram </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 512 512"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"/><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"/></svg>
+                    </button>
+                </div>
+
+                <div class="mt-8 flex items-center justify-between">
+
+                    <h1 class="font-bold">⦾ QR 2023</h1>
+
+                    <div class="flex items-center md:space-x-8 space-x-2 font-light">
+                        <button>Terms of Use</button>
+                        <button>Privacy Policy</button>
+                        <button>License</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- Js -->
+    <script src="script.js"></script>
+</body>
+</html>
