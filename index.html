@@ -172,89 +172,268 @@
     
         <!-- testimonial  -->
         <div class=" py-4 md:mt-12">
+
             <div class="mx-auto">
                 <h1 class="font-bold text-3xl text-center tracking-wide capitalize">Testimonials</h1>
                 <p class="text-center my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet ipsum quibusdam dolores eveniet </p>
             </div>
 
-            <div class="flex justify-between items-center mt-8">
+            <div class="md:flex justify-between items-center w-full mt-12">
                 <!-- Previous  -->
-                <button 
-                    class=" w-8 h-8 md:flex items-center justify-center hidden rounded-full border-2 border-dark"
-                    id="prev"
-                    onclick="previousReview()"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                    </svg>                                          
-                </button>
+                <div>
+                    <button 
+                        class=" w-8 h-8 md:flex items-center justify-center rounded-full border-2 border-dark"
+                        id="prevBtn"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>                                          
+                    </button>
+                </div>
+    
                 <!-- Content  -->
-                <div class="">
-                    <div class="md:w-[650px] h-80 bg-subscribe drop-shadow-lg">
-
-                        <div class="flex justify-around items-center h-full px-12">
-                            <div class="md:flex hidden">
-                                <div class=" w-36 h-36 rounded-full bg-heroGreen relative">
-                                    <div class="absolute -left-4 -top-3 w-16 h-16 rounded-full bg-heroGreen"></div>
-                                    <img src="./assets/avatar1.jpg" alt="avatar" class="object-cover w-32 h-32 rounded-full absolute top-0 left-0 right-0 bottom-0 m-auto">
-                                </div>                            
-                            </div>
-                            
-                            <div class="md:mx-12">
-                                <p class="relative">
-                                    <!-- Opening quote SVG -->
-                                    <svg class="absolute -top-6 -left-8 h-6 w-6 text-dark" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.1 21.6498H10.2375C8.9 21.6498 7.8125 20.5623 7.8125 19.2248V15.8872C7.8125 15.3747 8.2375 14.9497 8.75 14.9497H12.1C13.4625 14.9497 14.525 16.0122 14.525 17.3747V19.2372C14.5125 20.5747 13.45 21.6498 12.1 21.6498ZM9.6875 16.8122V19.2122C9.6875 19.5122 9.9375 19.7623 10.2375 19.7623H12.1C12.5 19.7623 12.65 19.4622 12.65 19.2122V17.3498C12.65 17.0998 12.5125 16.7998 12.1 16.7998H9.6875V16.8122Z" fill="#292D32" fill-opacity="0.5"/>
-                                        <path d="M8.75 16.8123C8.2375 16.8123 7.8125 16.3873 7.8125 15.8748C7.8125 12.0248 8.65001 11.1624 10.8875 9.83739C11.325 9.57489 11.9125 9.72491 12.175 10.1624C12.4375 10.5999 12.2875 11.1874 11.85 11.4499C10.15 12.4624 9.6875 12.7248 9.6875 15.8748C9.6875 16.3998 9.2625 16.8123 8.75 16.8123Z" fill="#292D32" fill-opacity="0.5"/>
-                                        <path d="M19.7623 21.6498H17.8999C16.5624 21.6498 15.4749 20.5623 15.4749 19.2248V15.8872C15.4749 15.3747 15.8999 14.9497 16.4124 14.9497H19.7623C21.1248 14.9497 22.1873 16.0122 22.1873 17.3747V19.2372C22.1873 20.5747 21.1248 21.6498 19.7623 21.6498ZM17.3623 16.8122V19.2122C17.3623 19.5122 17.6123 19.7623 17.9123 19.7623H19.7749C20.1749 19.7623 20.3248 19.4622 20.3248 19.2122V17.3498C20.3248 17.0998 20.1874 16.7998 19.7749 16.7998H17.3623V16.8122Z" fill="#292D32" fill-opacity="0.5"/>
-                                        <path d="M16.4252 16.8123C15.9127 16.8123 15.4877 16.3873 15.4877 15.8748C15.4877 12.0248 16.3252 11.1624 18.5627 9.83739C19.0127 9.57489 19.5877 9.72491 19.8502 10.1624C20.1127 10.6124 19.9627 11.1874 19.5252 11.4499C17.8252 12.4624 17.3627 12.7248 17.3627 15.8748C17.3627 16.3998 16.9377 16.8123 16.4252 16.8123Z" fill="#292D32" fill-opacity="0.5"/>
-                                        <path d="M15 29.1123C7.5875 29.1123 1.5625 23.0873 1.5625 15.6748C1.5625 8.2623 7.5875 2.2373 15 2.2373C22.4125 2.2373 28.4375 8.2623 28.4375 15.6748C28.4375 23.0873 22.4125 29.1123 15 29.1123ZM15 4.1123C8.625 4.1123 3.4375 9.2998 3.4375 15.6748C3.4375 22.0498 8.625 27.2373 15 27.2373C21.375 27.2373 26.5625 22.0498 26.5625 15.6748C26.5625 9.2998 21.375 4.1123 15 4.1123Z" fill="#292D32" fill-opacity="0.5"/>
-                                    </svg>                                    
-                                    
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ducimus unde eos ut amet! Blanditiis placeat, dolor id earum laudantium explicabo neque est cumque ut nisi dolorem labore, porro recusandae.
+                <div class="testimonial-carousel  ">
+                    <div class="relative">
+                        <!-- left dummy  -->
+                        <div class="md:w-[650px] md:h-64 bg-subscribe border shadow-md drop-shadow-lg absolute md:-left-12 md:top-8 "></div>
+                        <div class="md:w-[650px] md:h-72 bg-subscribe border shadow-md drop-shadow-lg absolute md:-left-4 md:top-4 "></div>
                         
-                                    <!-- Closing quote SVG -->
-                                    <svg class="absolute -bottom-6 -right-8 h-6 w-6 text-dark" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M21.2498 16.4123H17.8999C16.5374 16.4123 15.4749 15.3498 15.4749 13.9873V12.1247C15.4749 10.7622 16.5374 9.69971 17.8999 9.69971H19.7623C21.0998 9.69971 22.1873 10.7872 22.1873 12.1247V15.4623C22.1873 15.9873 21.7623 16.4123 21.2498 16.4123ZM17.8999 11.5747C17.4999 11.5747 17.3499 11.8747 17.3499 12.1247V13.9873C17.3499 14.2373 17.4874 14.5373 17.8999 14.5373H20.3123V12.1372C20.3123 11.8372 20.0623 11.5872 19.7623 11.5872H17.8999V11.5747Z" fill="#292D32" fill-opacity="0.5"/>
-                                        <path d="M18.6375 21.6499C18.3125 21.6499 17.9999 21.4873 17.8249 21.1873C17.5624 20.7373 17.7125 20.1623 18.15 19.8998C19.85 18.8873 20.3125 18.6249 20.3125 15.4749C20.3125 14.9624 20.7375 14.5374 21.25 14.5374C21.7625 14.5374 22.1875 14.9624 22.1875 15.4749C22.1875 19.3249 21.3499 20.1873 19.1124 21.5123C18.9624 21.5998 18.8 21.6499 18.6375 21.6499Z" fill="#292D32" fill-opacity="0.5"/>
-                                        <path d="M13.5753 16.4123H10.2253C8.86278 16.4123 7.80029 15.3498 7.80029 13.9873V12.1247C7.80029 10.7622 8.86278 9.69971 10.2253 9.69971H12.0878C13.4253 9.69971 14.5128 10.7872 14.5128 12.1247V15.4623C14.5128 15.9873 14.1003 16.4123 13.5753 16.4123ZM10.2378 11.5747C9.83779 11.5747 9.68779 11.8747 9.68779 12.1247V13.9873C9.68779 14.2373 9.82529 14.5373 10.2378 14.5373H12.6503V12.1372C12.6503 11.8372 12.4003 11.5872 12.1003 11.5872H10.2378V11.5747Z" fill="#292D32" fill-opacity="0.5"/>
-                                        <path d="M10.9623 21.6499C10.6373 21.6499 10.3248 21.4873 10.1498 21.1873C9.88727 20.7373 10.0373 20.1623 10.4748 19.8998C12.1748 18.8873 12.6373 18.6249 12.6373 15.4749C12.6373 14.9624 13.0623 14.5374 13.5748 14.5374C14.0873 14.5374 14.5123 14.9624 14.5123 15.4749C14.5123 19.3249 13.6748 20.1873 11.4373 21.5123C11.2873 21.5998 11.1248 21.6499 10.9623 21.6499Z" fill="#292D32" fill-opacity="0.5"/>
-                                        <path d="M15 29.1123C7.5875 29.1123 1.5625 23.0873 1.5625 15.6748C1.5625 8.2623 7.5875 2.2373 15 2.2373C22.4125 2.2373 28.4375 8.2623 28.4375 15.6748C28.4375 23.0873 22.4125 29.1123 15 29.1123ZM15 4.1123C8.625 4.1123 3.4375 9.2998 3.4375 15.6748C3.4375 22.0498 8.625 27.2373 15 27.2373C21.375 27.2373 26.5625 22.0498 26.5625 15.6748C26.5625 9.2998 21.375 4.1123 15 4.1123Z" fill="#292D32" fill-opacity="0.5"/>
-                                    </svg>                                    
-                                </p>
-
-                                <div class="flex items-center md:space-x-0 space-x-6 h-full md:mt-0 mt-8">
-
-                                    <div class="md:hidden flex">
-                                        <div class=" w-16 h-16 rounded-full bg-heroGreen relative">
-                                            <!-- <div class="absolute -left-4 -top-3 w-4 h-4 rounded-full bg-heroGreen"></div> -->
-                                            <img src="./assets/avatar1.jpg" alt="avatar" class="object-cover w-12 h-12 rounded-full absolute top-0 left-0 right-0 bottom-0 m-auto">
+                        <!-- Right dummy  -->
+                        <div class="md:w-[650px] md:h-64 bg-subscribe border shadow-md drop-shadow-lg absolute md:left-12  md:top-8"></div>
+                        <div class="md:w-[650px] md:h-72 bg-subscribe border shadow-md drop-shadow-lg absolute md:left-4  md:top-4"></div>
+                    </div>
+    
+                    <div class="testimonial-slider z-1">
+                        <!-- Item 1 -->
+                        <div class="testimonial-item hidden">
+                            <div class="md:w-[650px] h-80 bg-subscribe drop-shadow-lg rounded-lg">
+            
+                                <div class="flex justify-around items-center h-full px-12">
+                                    <div class="md:flex hidden">
+                                        <div class=" w-36 h-36 rounded-full bg-heroGreen relative">
+                                            <div class="absolute -left-4 -top-3 w-16 h-16 rounded-full bg-heroGreen"></div>
+                                            <img src="./assets/avatar1.jpg" alt="avatar" class="object-cover w-32 h-32 rounded-full absolute top-0 left-0 right-0 bottom-0 m-auto">
                                         </div>                            
                                     </div>
-
-                                    <div class="text-center md:mt-12">
-                                        <h1 class="font-bold tracking-wide">Gloria Mbapo</h1>
-                                        <h3 class="font-normal tracking-wider">LD, practioner</h3>
+                                    
+                                    <div class="md:mx-12">
+                                        <div class="relative">
+                                            <!-- Opening quote SVG -->
+                                            <svg class="absolute md:-top-6 -left-8 md:h-6 md:w-6 text-dark" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.1 21.6498H10.2375C8.9 21.6498 7.8125 20.5623 7.8125 19.2248V15.8872C7.8125 15.3747 8.2375 14.9497 8.75 14.9497H12.1C13.4625 14.9497 14.525 16.0122 14.525 17.3747V19.2372C14.5125 20.5747 13.45 21.6498 12.1 21.6498ZM9.6875 16.8122V19.2122C9.6875 19.5122 9.9375 19.7623 10.2375 19.7623H12.1C12.5 19.7623 12.65 19.4622 12.65 19.2122V17.3498C12.65 17.0998 12.5125 16.7998 12.1 16.7998H9.6875V16.8122Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M8.75 16.8123C8.2375 16.8123 7.8125 16.3873 7.8125 15.8748C7.8125 12.0248 8.65001 11.1624 10.8875 9.83739C11.325 9.57489 11.9125 9.72491 12.175 10.1624C12.4375 10.5999 12.2875 11.1874 11.85 11.4499C10.15 12.4624 9.6875 12.7248 9.6875 15.8748C9.6875 16.3998 9.2625 16.8123 8.75 16.8123Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M19.7623 21.6498H17.8999C16.5624 21.6498 15.4749 20.5623 15.4749 19.2248V15.8872C15.4749 15.3747 15.8999 14.9497 16.4124 14.9497H19.7623C21.1248 14.9497 22.1873 16.0122 22.1873 17.3747V19.2372C22.1873 20.5747 21.1248 21.6498 19.7623 21.6498ZM17.3623 16.8122V19.2122C17.3623 19.5122 17.6123 19.7623 17.9123 19.7623H19.7749C20.1749 19.7623 20.3248 19.4622 20.3248 19.2122V17.3498C20.3248 17.0998 20.1874 16.7998 19.7749 16.7998H17.3623V16.8122Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M16.4252 16.8123C15.9127 16.8123 15.4877 16.3873 15.4877 15.8748C15.4877 12.0248 16.3252 11.1624 18.5627 9.83739C19.0127 9.57489 19.5877 9.72491 19.8502 10.1624C20.1127 10.6124 19.9627 11.1874 19.5252 11.4499C17.8252 12.4624 17.3627 12.7248 17.3627 15.8748C17.3627 16.3998 16.9377 16.8123 16.4252 16.8123Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M15 29.1123C7.5875 29.1123 1.5625 23.0873 1.5625 15.6748C1.5625 8.2623 7.5875 2.2373 15 2.2373C22.4125 2.2373 28.4375 8.2623 28.4375 15.6748C28.4375 23.0873 22.4125 29.1123 15 29.1123ZM15 4.1123C8.625 4.1123 3.4375 9.2998 3.4375 15.6748C3.4375 22.0498 8.625 27.2373 15 27.2373C21.375 27.2373 26.5625 22.0498 26.5625 15.6748C26.5625 9.2998 21.375 4.1123 15 4.1123Z" fill="#292D32" fill-opacity="0.5"/>
+                                            </svg>
+                                            <p class="text-center">
+                                                <!-- <span class="px-2"> -->
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ducimus unde eos ut amet! Blanditiis placeat, dolor id earum laudantium explicabo neque est cumque ut nisi dolorem labore, porro recusandae.
+                                                <!-- </span> -->
+                                            </p>
+                                            <!-- Closing quote SVG -->
+                                            <svg class="absolute -bottom-6 -right-8 md:h-6 md:w-6 text-dark" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21.2498 16.4123H17.8999C16.5374 16.4123 15.4749 15.3498 15.4749 13.9873V12.1247C15.4749 10.7622 16.5374 9.69971 17.8999 9.69971H19.7623C21.0998 9.69971 22.1873 10.7872 22.1873 12.1247V15.4623C22.1873 15.9873 21.7623 16.4123 21.2498 16.4123ZM17.8999 11.5747C17.4999 11.5747 17.3499 11.8747 17.3499 12.1247V13.9873C17.3499 14.2373 17.4874 14.5373 17.8999 14.5373H20.3123V12.1372C20.3123 11.8372 20.0623 11.5872 19.7623 11.5872H17.8999V11.5747Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M18.6375 21.6499C18.3125 21.6499 17.9999 21.4873 17.8249 21.1873C17.5624 20.7373 17.7125 20.1623 18.15 19.8998C19.85 18.8873 20.3125 18.6249 20.3125 15.4749C20.3125 14.9624 20.7375 14.5374 21.25 14.5374C21.7625 14.5374 22.1875 14.9624 22.1875 15.4749C22.1875 19.3249 21.3499 20.1873 19.1124 21.5123C18.9624 21.5998 18.8 21.6499 18.6375 21.6499Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M13.5753 16.4123H10.2253C8.86278 16.4123 7.80029 15.3498 7.80029 13.9873V12.1247C7.80029 10.7622 8.86278 9.69971 10.2253 9.69971H12.0878C13.4253 9.69971 14.5128 10.7872 14.5128 12.1247V15.4623C14.5128 15.9873 14.1003 16.4123 13.5753 16.4123ZM10.2378 11.5747C9.83779 11.5747 9.68779 11.8747 9.68779 12.1247V13.9873C9.68779 14.2373 9.82529 14.5373 10.2378 14.5373H12.6503V12.1372C12.6503 11.8372 12.4003 11.5872 12.1003 11.5872H10.2378V11.5747Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M10.9623 21.6499C10.6373 21.6499 10.3248 21.4873 10.1498 21.1873C9.88727 20.7373 10.0373 20.1623 10.4748 19.8998C12.1748 18.8873 12.6373 18.6249 12.6373 15.4749C12.6373 14.9624 13.0623 14.5374 13.5748 14.5374C14.0873 14.5374 14.5123 14.9624 14.5123 15.4749C14.5123 19.3249 13.6748 20.1873 11.4373 21.5123C11.2873 21.5998 11.1248 21.6499 10.9623 21.6499Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M15 29.1123C7.5875 29.1123 1.5625 23.0873 1.5625 15.6748C1.5625 8.2623 7.5875 2.2373 15 2.2373C22.4125 2.2373 28.4375 8.2623 28.4375 15.6748C28.4375 23.0873 22.4125 29.1123 15 29.1123ZM15 4.1123C8.625 4.1123 3.4375 9.2998 3.4375 15.6748C3.4375 22.0498 8.625 27.2373 15 27.2373C21.375 27.2373 26.5625 22.0498 26.5625 15.6748C26.5625 9.2998 21.375 4.1123 15 4.1123Z" fill="#292D32" fill-opacity="0.5"/>
+                                            </svg>                                    
+                                        </div>
+            
+                                        <div class="flex items-center md:space-x-0 space-x-6 h-full md:mt-0 mt-8">
+            
+                                            <div class="md:hidden flex">
+                                                <div class=" w-16 h-16 rounded-full bg-heroGreen relative">
+                                                    <!-- <div class="absolute -left-4 -top-3 w-4 h-4 rounded-full bg-heroGreen"></div> -->
+                                                    <img src="./assets/avatar1.jpg" alt="avatar" class="object-cover w-12 h-12 rounded-full absolute top-0 left-0 right-0 bottom-0 m-auto">
+                                                </div>                            
+                                            </div>
+            
+                                            <div class="text-center md:mt-12">
+                                                <h1 class="font-bold tracking-wide">Gloria Mbapo</h1>
+                                                <h3 class="font-normal tracking-wider">LD, practioner</h3>
+                                            </div>
+                                        </div>
+            
                                     </div>
                                 </div>
-
+            
                             </div>
                         </div>
-
+                        <!-- Item 2  -->
+                        <div class="testimonial-item hidden">
+                            <div class="md:w-[650px] h-80 bg-subscribe drop-shadow-lg rounded-lg">
+            
+                                <div class="flex justify-around items-center h-full px-12">
+                                    <div class="md:flex hidden">
+                                        <div class=" w-36 h-36 rounded-full bg-heroGreen relative">
+                                            <div class="absolute -left-4 -top-3 w-16 h-16 rounded-full bg-heroGreen"></div>
+                                            <img src="./assets/avatar3.jpg" alt="avatar" class="object-cover w-32 h-32 rounded-full absolute top-0 left-0 right-0 bottom-0 m-auto">
+                                        </div>                            
+                                    </div>
+                                    
+                                    <div class="md:mx-12">
+                                        <div class="relative">
+                                            <!-- Opening quote SVG -->
+                                            <svg class="absolute md:-top-6 -left-8 md:h-6 md:w-6 text-dark" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.1 21.6498H10.2375C8.9 21.6498 7.8125 20.5623 7.8125 19.2248V15.8872C7.8125 15.3747 8.2375 14.9497 8.75 14.9497H12.1C13.4625 14.9497 14.525 16.0122 14.525 17.3747V19.2372C14.5125 20.5747 13.45 21.6498 12.1 21.6498ZM9.6875 16.8122V19.2122C9.6875 19.5122 9.9375 19.7623 10.2375 19.7623H12.1C12.5 19.7623 12.65 19.4622 12.65 19.2122V17.3498C12.65 17.0998 12.5125 16.7998 12.1 16.7998H9.6875V16.8122Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M8.75 16.8123C8.2375 16.8123 7.8125 16.3873 7.8125 15.8748C7.8125 12.0248 8.65001 11.1624 10.8875 9.83739C11.325 9.57489 11.9125 9.72491 12.175 10.1624C12.4375 10.5999 12.2875 11.1874 11.85 11.4499C10.15 12.4624 9.6875 12.7248 9.6875 15.8748C9.6875 16.3998 9.2625 16.8123 8.75 16.8123Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M19.7623 21.6498H17.8999C16.5624 21.6498 15.4749 20.5623 15.4749 19.2248V15.8872C15.4749 15.3747 15.8999 14.9497 16.4124 14.9497H19.7623C21.1248 14.9497 22.1873 16.0122 22.1873 17.3747V19.2372C22.1873 20.5747 21.1248 21.6498 19.7623 21.6498ZM17.3623 16.8122V19.2122C17.3623 19.5122 17.6123 19.7623 17.9123 19.7623H19.7749C20.1749 19.7623 20.3248 19.4622 20.3248 19.2122V17.3498C20.3248 17.0998 20.1874 16.7998 19.7749 16.7998H17.3623V16.8122Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M16.4252 16.8123C15.9127 16.8123 15.4877 16.3873 15.4877 15.8748C15.4877 12.0248 16.3252 11.1624 18.5627 9.83739C19.0127 9.57489 19.5877 9.72491 19.8502 10.1624C20.1127 10.6124 19.9627 11.1874 19.5252 11.4499C17.8252 12.4624 17.3627 12.7248 17.3627 15.8748C17.3627 16.3998 16.9377 16.8123 16.4252 16.8123Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M15 29.1123C7.5875 29.1123 1.5625 23.0873 1.5625 15.6748C1.5625 8.2623 7.5875 2.2373 15 2.2373C22.4125 2.2373 28.4375 8.2623 28.4375 15.6748C28.4375 23.0873 22.4125 29.1123 15 29.1123ZM15 4.1123C8.625 4.1123 3.4375 9.2998 3.4375 15.6748C3.4375 22.0498 8.625 27.2373 15 27.2373C21.375 27.2373 26.5625 22.0498 26.5625 15.6748C26.5625 9.2998 21.375 4.1123 15 4.1123Z" fill="#292D32" fill-opacity="0.5"/>
+                                            </svg>
+                                            <p class="text-center">
+                                                <!-- <span class="px-2"> -->
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ducimus unde eos ut amet! Blanditiis placeat, dolor id earum laudantium explicabo neque est cumque ut nisi dolorem labore, porro recusandae.
+                                                <!-- </span> -->
+                                            </p>
+                                            <!-- Closing quote SVG -->
+                                            <svg class="absolute -bottom-6 -right-8 md:h-6 md:w-6 text-dark" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21.2498 16.4123H17.8999C16.5374 16.4123 15.4749 15.3498 15.4749 13.9873V12.1247C15.4749 10.7622 16.5374 9.69971 17.8999 9.69971H19.7623C21.0998 9.69971 22.1873 10.7872 22.1873 12.1247V15.4623C22.1873 15.9873 21.7623 16.4123 21.2498 16.4123ZM17.8999 11.5747C17.4999 11.5747 17.3499 11.8747 17.3499 12.1247V13.9873C17.3499 14.2373 17.4874 14.5373 17.8999 14.5373H20.3123V12.1372C20.3123 11.8372 20.0623 11.5872 19.7623 11.5872H17.8999V11.5747Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M18.6375 21.6499C18.3125 21.6499 17.9999 21.4873 17.8249 21.1873C17.5624 20.7373 17.7125 20.1623 18.15 19.8998C19.85 18.8873 20.3125 18.6249 20.3125 15.4749C20.3125 14.9624 20.7375 14.5374 21.25 14.5374C21.7625 14.5374 22.1875 14.9624 22.1875 15.4749C22.1875 19.3249 21.3499 20.1873 19.1124 21.5123C18.9624 21.5998 18.8 21.6499 18.6375 21.6499Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M13.5753 16.4123H10.2253C8.86278 16.4123 7.80029 15.3498 7.80029 13.9873V12.1247C7.80029 10.7622 8.86278 9.69971 10.2253 9.69971H12.0878C13.4253 9.69971 14.5128 10.7872 14.5128 12.1247V15.4623C14.5128 15.9873 14.1003 16.4123 13.5753 16.4123ZM10.2378 11.5747C9.83779 11.5747 9.68779 11.8747 9.68779 12.1247V13.9873C9.68779 14.2373 9.82529 14.5373 10.2378 14.5373H12.6503V12.1372C12.6503 11.8372 12.4003 11.5872 12.1003 11.5872H10.2378V11.5747Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M10.9623 21.6499C10.6373 21.6499 10.3248 21.4873 10.1498 21.1873C9.88727 20.7373 10.0373 20.1623 10.4748 19.8998C12.1748 18.8873 12.6373 18.6249 12.6373 15.4749C12.6373 14.9624 13.0623 14.5374 13.5748 14.5374C14.0873 14.5374 14.5123 14.9624 14.5123 15.4749C14.5123 19.3249 13.6748 20.1873 11.4373 21.5123C11.2873 21.5998 11.1248 21.6499 10.9623 21.6499Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M15 29.1123C7.5875 29.1123 1.5625 23.0873 1.5625 15.6748C1.5625 8.2623 7.5875 2.2373 15 2.2373C22.4125 2.2373 28.4375 8.2623 28.4375 15.6748C28.4375 23.0873 22.4125 29.1123 15 29.1123ZM15 4.1123C8.625 4.1123 3.4375 9.2998 3.4375 15.6748C3.4375 22.0498 8.625 27.2373 15 27.2373C21.375 27.2373 26.5625 22.0498 26.5625 15.6748C26.5625 9.2998 21.375 4.1123 15 4.1123Z" fill="#292D32" fill-opacity="0.5"/>
+                                            </svg>                                    
+                                        </div>
+            
+                                        <div class="flex items-center md:space-x-0 space-x-6 h-full md:mt-0 mt-8">
+            
+                                            <div class="md:hidden flex">
+                                                <div class=" w-16 h-16 rounded-full bg-heroGreen relative">
+                                                    <!-- <div class="absolute -left-4 -top-3 w-4 h-4 rounded-full bg-heroGreen"></div> -->
+                                                    <img src="./assets/avatar1.jpg" alt="avatar" class="object-cover w-12 h-12 rounded-full absolute top-0 left-0 right-0 bottom-0 m-auto">
+                                                </div>                            
+                                            </div>
+            
+                                            <div class="text-center md:mt-12">
+                                                <h1 class="font-bold tracking-wide">Mbapo Ijeoma</h1>
+                                                <h3 class="font-normal tracking-wider">LD, Trainer</h3>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                        <!-- Item 3  -->
+                        <div class="testimonial-item hidden">
+                            <div class="md:w-[650px] h-80 bg-subscribe drop-shadow-lg rounded-lg">
+            
+                                <div class="flex justify-around items-center h-full px-12">
+                                    <div class="md:flex hidden">
+                                        <div class=" w-36 h-36 rounded-full bg-heroGreen relative">
+                                            <div class="absolute -left-4 -top-3 w-16 h-16 rounded-full bg-heroGreen"></div>
+                                            <img src="./assets/avatar1.jpg" alt="avatar" class="object-cover w-32 h-32 rounded-full absolute top-0 left-0 right-0 bottom-0 m-auto">
+                                        </div>                            
+                                    </div>
+                                    
+                                    <div class="md:mx-12">
+                                        <div class="relative">
+                                            <!-- Opening quote SVG -->
+                                            <svg class="absolute md:-top-6 -left-8 md:h-6 md:w-6 text-dark" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.1 21.6498H10.2375C8.9 21.6498 7.8125 20.5623 7.8125 19.2248V15.8872C7.8125 15.3747 8.2375 14.9497 8.75 14.9497H12.1C13.4625 14.9497 14.525 16.0122 14.525 17.3747V19.2372C14.5125 20.5747 13.45 21.6498 12.1 21.6498ZM9.6875 16.8122V19.2122C9.6875 19.5122 9.9375 19.7623 10.2375 19.7623H12.1C12.5 19.7623 12.65 19.4622 12.65 19.2122V17.3498C12.65 17.0998 12.5125 16.7998 12.1 16.7998H9.6875V16.8122Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M8.75 16.8123C8.2375 16.8123 7.8125 16.3873 7.8125 15.8748C7.8125 12.0248 8.65001 11.1624 10.8875 9.83739C11.325 9.57489 11.9125 9.72491 12.175 10.1624C12.4375 10.5999 12.2875 11.1874 11.85 11.4499C10.15 12.4624 9.6875 12.7248 9.6875 15.8748C9.6875 16.3998 9.2625 16.8123 8.75 16.8123Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M19.7623 21.6498H17.8999C16.5624 21.6498 15.4749 20.5623 15.4749 19.2248V15.8872C15.4749 15.3747 15.8999 14.9497 16.4124 14.9497H19.7623C21.1248 14.9497 22.1873 16.0122 22.1873 17.3747V19.2372C22.1873 20.5747 21.1248 21.6498 19.7623 21.6498ZM17.3623 16.8122V19.2122C17.3623 19.5122 17.6123 19.7623 17.9123 19.7623H19.7749C20.1749 19.7623 20.3248 19.4622 20.3248 19.2122V17.3498C20.3248 17.0998 20.1874 16.7998 19.7749 16.7998H17.3623V16.8122Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M16.4252 16.8123C15.9127 16.8123 15.4877 16.3873 15.4877 15.8748C15.4877 12.0248 16.3252 11.1624 18.5627 9.83739C19.0127 9.57489 19.5877 9.72491 19.8502 10.1624C20.1127 10.6124 19.9627 11.1874 19.5252 11.4499C17.8252 12.4624 17.3627 12.7248 17.3627 15.8748C17.3627 16.3998 16.9377 16.8123 16.4252 16.8123Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M15 29.1123C7.5875 29.1123 1.5625 23.0873 1.5625 15.6748C1.5625 8.2623 7.5875 2.2373 15 2.2373C22.4125 2.2373 28.4375 8.2623 28.4375 15.6748C28.4375 23.0873 22.4125 29.1123 15 29.1123ZM15 4.1123C8.625 4.1123 3.4375 9.2998 3.4375 15.6748C3.4375 22.0498 8.625 27.2373 15 27.2373C21.375 27.2373 26.5625 22.0498 26.5625 15.6748C26.5625 9.2998 21.375 4.1123 15 4.1123Z" fill="#292D32" fill-opacity="0.5"/>
+                                            </svg>
+                                            <p class="text-center">
+                                                <!-- <span class="px-2"> -->
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ducimus unde eos ut amet! Blanditiis placeat, dolor id earum laudantium explicabo neque est cumque ut nisi dolorem labore, porro recusandae.
+                                                <!-- </span> -->
+                                            </p>
+                                            <!-- Closing quote SVG -->
+                                            <svg class="absolute -bottom-6 -right-8 md:h-6 md:w-6 text-dark" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21.2498 16.4123H17.8999C16.5374 16.4123 15.4749 15.3498 15.4749 13.9873V12.1247C15.4749 10.7622 16.5374 9.69971 17.8999 9.69971H19.7623C21.0998 9.69971 22.1873 10.7872 22.1873 12.1247V15.4623C22.1873 15.9873 21.7623 16.4123 21.2498 16.4123ZM17.8999 11.5747C17.4999 11.5747 17.3499 11.8747 17.3499 12.1247V13.9873C17.3499 14.2373 17.4874 14.5373 17.8999 14.5373H20.3123V12.1372C20.3123 11.8372 20.0623 11.5872 19.7623 11.5872H17.8999V11.5747Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M18.6375 21.6499C18.3125 21.6499 17.9999 21.4873 17.8249 21.1873C17.5624 20.7373 17.7125 20.1623 18.15 19.8998C19.85 18.8873 20.3125 18.6249 20.3125 15.4749C20.3125 14.9624 20.7375 14.5374 21.25 14.5374C21.7625 14.5374 22.1875 14.9624 22.1875 15.4749C22.1875 19.3249 21.3499 20.1873 19.1124 21.5123C18.9624 21.5998 18.8 21.6499 18.6375 21.6499Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M13.5753 16.4123H10.2253C8.86278 16.4123 7.80029 15.3498 7.80029 13.9873V12.1247C7.80029 10.7622 8.86278 9.69971 10.2253 9.69971H12.0878C13.4253 9.69971 14.5128 10.7872 14.5128 12.1247V15.4623C14.5128 15.9873 14.1003 16.4123 13.5753 16.4123ZM10.2378 11.5747C9.83779 11.5747 9.68779 11.8747 9.68779 12.1247V13.9873C9.68779 14.2373 9.82529 14.5373 10.2378 14.5373H12.6503V12.1372C12.6503 11.8372 12.4003 11.5872 12.1003 11.5872H10.2378V11.5747Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M10.9623 21.6499C10.6373 21.6499 10.3248 21.4873 10.1498 21.1873C9.88727 20.7373 10.0373 20.1623 10.4748 19.8998C12.1748 18.8873 12.6373 18.6249 12.6373 15.4749C12.6373 14.9624 13.0623 14.5374 13.5748 14.5374C14.0873 14.5374 14.5123 14.9624 14.5123 15.4749C14.5123 19.3249 13.6748 20.1873 11.4373 21.5123C11.2873 21.5998 11.1248 21.6499 10.9623 21.6499Z" fill="#292D32" fill-opacity="0.5"/>
+                                                <path d="M15 29.1123C7.5875 29.1123 1.5625 23.0873 1.5625 15.6748C1.5625 8.2623 7.5875 2.2373 15 2.2373C22.4125 2.2373 28.4375 8.2623 28.4375 15.6748C28.4375 23.0873 22.4125 29.1123 15 29.1123ZM15 4.1123C8.625 4.1123 3.4375 9.2998 3.4375 15.6748C3.4375 22.0498 8.625 27.2373 15 27.2373C21.375 27.2373 26.5625 22.0498 26.5625 15.6748C26.5625 9.2998 21.375 4.1123 15 4.1123Z" fill="#292D32" fill-opacity="0.5"/>
+                                            </svg>                                    
+                                        </div>
+            
+                                        <div class="flex items-center md:space-x-0 space-x-6 h-full md:mt-0 mt-8">
+            
+                                            <div class="md:hidden flex">
+                                                <div class=" w-16 h-16 rounded-full bg-heroGreen relative">
+                                                    <!-- <div class="absolute -left-4 -top-3 w-4 h-4 rounded-full bg-heroGreen"></div> -->
+                                                    <img src="./assets/avatar1.jpg" alt="avatar" class="object-cover w-12 h-12 rounded-full absolute top-0 left-0 right-0 bottom-0 m-auto">
+                                                </div>                            
+                                            </div>
+            
+                                            <div class="text-center md:mt-12">
+                                                <h1 class="font-bold tracking-wide">Gloria Adepoju</h1>
+                                                <h3 class="font-normal tracking-wider">practioner</h3>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
                     </div>
+    
                 </div>
-                <!-- Next -->
-                <button 
-                    class="w-8 h-8 md:flex items-center justify-center hidden rounded-full border-2 border-dark"
-                    id="next"
-                    onclick="nextReview()"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                    </svg>                                          
-                </button>
 
+                <!-- Next -->
+                <div>
+                    <button 
+                        class="w-8 h-8 md:flex items-center justify-center rounded-full border-2 border-dark"
+                        id="nextBtn"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>                                          
+                    </button>
+                </div>
+
+                <!-- <div class="md:flex hidden justify-center mt-4">
+                    <button 
+                        class=" w-8 h-8 md:flex items-center justify-center rounded-full border-2 border-dark absolute left-0 top-1/2 transform -translate-y-1/2 z-10" 
+                        id="prevBtn"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <button 
+                        class="w-8 h-8 md:flex items-center justify-center rounded-full border-2 border-dark absolute right-0 top-1/2 transform -translate-y-1/2 z-10" 
+                        id="nextBtn"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg> 
+                    </button>
+                </div>
+
+                <div class="flex  justify-center mt-4">
+                    <button 
+                        class=" w-8 h-8 md:flex items-center justify-center rounded-full border-2 border-dark absolute left-0 top-1/2 transform -translate-y-1/2 z-10" 
+                        id="prevBtn"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
+
+                    <button 
+                        class="w-8 h-8 md:flex items-center justify-center rounded-full border-2 border-dark absolute right-0 top-1/2 transform -translate-y-1/2 z-10" 
+                        id="nextBtn"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg> 
+                        
+                    </button>
+                </div> -->
+    
             </div>
+
         </div>
     
         <!-- contact  -->
@@ -449,5 +628,39 @@
 
     <!-- Js -->
     <script src="script.js"></script>
+    <!-- testimonial carousel -->
+    <script>
+        // JavaScript code to handle the carousel functionality
+        document.addEventListener("DOMContentLoaded", function() {
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+            const testimonialItems = document.querySelectorAll(".testimonial-item");
+            let currentSlide = 0;
+        
+            function showSlide(slideIndex) {
+            testimonialItems.forEach((item, index) => {
+                if (index === slideIndex) {
+                item.classList.remove("hidden");
+                } else {
+                item.classList.add("hidden");
+                }
+            });
+            }
+        
+            function prevSlide() {
+            currentSlide = (currentSlide - 1 + testimonialItems.length) % testimonialItems.length;
+            showSlide(currentSlide);
+            }
+        
+            function nextSlide() {
+            currentSlide = (currentSlide + 1) % testimonialItems.length;
+            showSlide(currentSlide);
+            }
+        
+            prevBtn.addEventListener("click", prevSlide);
+            nextBtn.addEventListener("click", nextSlide);
+            showSlide(currentSlide); // Show the first slide initially
+        });
+    </script>
 </body>
 </html>
